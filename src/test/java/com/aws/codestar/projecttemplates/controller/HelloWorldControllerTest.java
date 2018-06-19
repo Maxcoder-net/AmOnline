@@ -67,5 +67,7 @@ class HelloWorldControllerTest {
         JSONObject jsonObjectFromResponse = new JSONObject(responseEntity.getBody().toString());
         assertEquals(EXPECTED_RESPONSE_VALUE, jsonObjectFromResponse.get("Output"));
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        
+        Syetem.out.println("git code");
     }
 }
